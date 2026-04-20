@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding:0;
+}
+h1{
+    margin-top: 1%;
+}
+body{
+    text-align: center;
+    background-color: #136F63;
+    
+}
+.nav-1{
+    height:30px;
+    width:100%;
+    background-color: rgb(145, 128, 32);
+}
+.scroll{
+ width:100%;
+ overflow: hidden;
+ white-space: nowrap;
+}
+.scroll-text{
+    width:100%;
+    display:inline-block;
+    padding-top: 10px;
+    animation: move 20s linear infinite ;
+}
+@keyframes move{
+    0%{
+        transform:translateX(-100%);
+    }
+    100%{
+        transform:translateX(100%);
+    }
+}
+
+.scroll-text:hover{
+    animation-play-state: paused;
+}
+.container{
+    height: 70vh;
+    
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    /* padding: 2%; */
+
+  
+}
+@media screen and ( max-width:800px){
+    .container{
+        height:60vh;
+    }
+    
+}
+.game{
+    height:60vmin;
+    width:60vmin;
+    border:none;
+     display: flex;
+     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:1.5vmin;
+    
+    /* background-color: yellow; */
+  
+}
+.box{
+    height:18vmin;
+    width: 18vmin;
+    background-color: #cbeef3;
+    border:none;
+    border-radius: 5%;
+    font-size: 8vmin;
+    color:#136F63;
+   
+}
+#reset{
+    height:50px;
+    width: 100px;
+    padding:10px;
+    font-size: 1.3rem;
+    border-radius: 7%;
+    border:none;
+    
+    
+}
+.box:hover{
+    border:2px solid darkgreen;
+}
+#reset:hover{
+background-color: green;
+border:3px solid white;
+color:white;
+ border-radius: 9%;
+}
